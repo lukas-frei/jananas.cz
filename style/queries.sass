@@ -1,0 +1,90 @@
+/* ------------ hd ------------- */
+@media only screen and (min-width: 1200px)
+  #intro
+    background-position: -60px 0
+
+@media only screen and (min-width: 1300px)
+  section
+    margin: 0 auto
+    padding: 60px 290px 100px 60px
+
+  nav ul
+    margin: 60px 40px
+
+  #intro
+    margin-right: 250px
+
+
+/* ------------ menu ------------- */
+@media only screen and (max-height: 640px), only screen and (max-width: 800px)
+  section
+    margin: 0 auto
+    padding: 30px 15px 60px 15px
+  h1
+    font-size: 50px
+
+  h2
+    font-size: 30px
+
+  h3
+    font-size: 20px
+
+
+  #intro
+    margin-right: 0
+    background-position: center 0
+  #nav
+    display: none
+  #nav-toggle
+    display: block
+    width: 100px
+  #nav-toggle
+      margin: 10px 10px
+  .post
+    margin-top: 20px
+
+
+  #koncerty
+    overflow: scroll
+    table, thead, tbody, th, td
+      display: block
+    table
+      width: 300px
+      padding-top: 10px
+    h1
+      width: 300px
+    th
+      display: none
+    tr
+      display: block
+      padding-bottom: 30px
+    td
+      position: relative
+      padding-left: 120px
+    td:before
+      position: absolute
+      margin-left: -120px
+    td:nth-of-type(1):before
+      content: "datum:"
+    td:nth-of-type(2):before
+      content: "čas:"
+    td:nth-of-type(3):before
+      content: "město:"
+    td:nth-of-type(4):before
+      content: "klub:"
+    td:nth-of-type(5):before
+      content: "link:"
+
+  footer
+    padding-right: 0
+
+
+/* ------------ mobile ------------- */
+@media only screen and (max-width: 540px)
+  body
+    font-size: 16px
+
+  #intro
+    background-image: url("../images/hero-mobile.jpg")
+    background-size: contain
+    height: 60vh
